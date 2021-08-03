@@ -1,4 +1,4 @@
-import Lib (  someFunc, stepAction, startCycle )
+import Lib ( stepAction, startCycle )
      
 import Control.Monad
 

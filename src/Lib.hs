@@ -1,17 +1,21 @@
 module Lib
-    ( someFunc,
+    (
       stepAction,
       startCycle
     ) where
         
 import Control.Monad ( when )
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+
+-- the idea of this small program is this video:
+-- https://youtu.be/094y1Z2wpJg by veritasium
+-- I needed something to practice and this seemed interesting
+
+-- 3x+1 or /2
 stepAction :: Int -> Int
 stepAction n = if even n then n `div`  2 else n * 3 + 1
 
-
+-- recursive calls until 1
 startCycle :: Int -> [Int] -> [Int]
 startCycle n list = do
     let step = stepAction n
