@@ -1,8 +1,13 @@
 module Main  where
-
-import Lib ( someFunc, startCycle )
+import Lib ( startCycle )
 
 
 
 main :: IO ()
-main = print(startCycle 502121 [])
+main = 
+    do
+        putStrLn "Enter your number"
+        line <- getLine 
+        let n = read line :: Int
+        
+        print(startCycle n [])
