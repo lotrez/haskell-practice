@@ -12,10 +12,10 @@ checkIfNumber l = readMaybe [l] :: Maybe Int
 
 
 -- get index of first number that has a letter preceding it
-getFirstIndex :: [Char] -> Int -> Int 
-getFirstIndex fileName i = 
+getFirstIndex :: [Char] -> Int -> Int
+getFirstIndex fileName i =
     -- string is empty (no number in it)
-    if  length fileName == 1
+    if  null fileName
         then -1
         else do
             -- try catch to see if it's a letter or number
@@ -24,13 +24,9 @@ getFirstIndex fileName i =
             if isJust isANumber
                 then i
                 else do
-                    -- check if the char behind is a number
-                    if isJust (checkIfNumber (fileName !! 1))
-                        then  i+1
-                        -- if it isnt call again with head
-                        else do
-                            let newFileName = drop 1 fileName
-                            getFirstIndex newFileName (i+1)
+                    let newFileName = drop 1 fileName
+                    getFirstIndex newFileName (i+1)
 
+-- we need to get the number of the season then the number of the episode
 -- parseFileName :: [Char] -> [Char] -> Int -> Int
 -- parseFileName fileName = 
