@@ -1,6 +1,5 @@
 module Main where
+import Lib ( getFirstIndex )
 
-import Lib
-
-main :: IO ()
-main = putStrLn "Hello"
+main :: IO()
+main = print(getFirstIndex "azeazeeza" 0)
