@@ -1,6 +1,6 @@
 module Main where
 
-import Lib (mainLoop)
+import Lib (mainLoop, generateGameState)
 
 main :: IO ()
-main = mainLoop
+main = mainLoop generateGameState False 0
