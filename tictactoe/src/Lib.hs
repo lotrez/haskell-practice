@@ -37,6 +37,26 @@ playCell x y gameState turnNumber =
         let player = if even turnNumber then 1 else 2
         gameState & element correctY .~ ( gameState!!correctY & element correctX .~ player)
 
+-- returns the number of the player that won
+checkGameOver :: [[Int]] -> Int
+checkGameOver board
+    | checkIfPlayerWon board 1 = 1
+    | checkIfPlayerWon board 2 = 2
+    | otherwise = 0
+
+checkIfPlayerWon :: [[Int]] -> Int -> Bool
+checkIfPlayerWon board player = 
+    -- check rows
+    -- all (\col -> b!!row!!col == 0) [0..2] -> check if line is all player
+    -- then for every rows
+    any (\row -> all (\col -> board!!row!!col == player) [0..2]) [0..2] ||
+    -- reversed for columns
+    any (\row -> all (\col -> board!!col!!row == player) [0..2]) [0..2] ||
+    -- check diagonals
+    (board!!0!!0 == player && board!!1!!1 == player && board!!2!!2 == player) ||
+    (board!!2!!0 == player && board!!1!!1 == player && board!!0!!2 == player)
+
+
 mainLoop :: [[Int]] -> Bool -> Int -> IO ()
 mainLoop gameState gameOver turnNumber = do
     if not gameOver then
@@ -51,10 +71,15 @@ mainLoop gameState gameOver turnNumber = do
             let x = (read column :: Int)
             putStrLn "Turn finished"
             let newGameState = playCell x y gameState turnNumber
-            if turnNumber == 2
+            -- isGameOver is an int
+            let isGameOver = checkGameOver newGameState
+            if isGameOver == 0
                 then
-                    mainLoop newGameState True (turnNumber+1)
+                    mainLoop newGameState False  (turnNumber+1)
                 else
-                    mainLoop newGameState False (turnNumber+1)
+                    do
+                        putStrLn (format "player {0} won" [[intToDigit isGameOver]])
+                        printGameState gameState
+                    
         else
             putStrLn "Fin de la partie"
