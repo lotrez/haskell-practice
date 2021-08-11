@@ -29,12 +29,15 @@ printGameState gameState = do
     putStrLn $ getGameLine (gameState!!1)
     putStrLn $ getGameLine (gameState!!2)
 
+getPlayerNumber :: Int -> Int
+getPlayerNumber turnNumber = if even turnNumber then 1 else 2
+
 playCell :: Int -> Int -> [[Int]] -> Int -> [[Int]]
 playCell x y gameState turnNumber =
     do
         let correctX = x-1
         let correctY = y-1
-        let player = if even turnNumber then 1 else 2
+        let player = getPlayerNumber turnNumber
         gameState & element correctY .~ ( gameState!!correctY & element correctX .~ player)
 
 -- returns the number of the player that won
@@ -62,7 +65,7 @@ mainLoop gameState gameOver turnNumber = do
     if not gameOver then
         do
             printGameState gameState
-            putStrLn "Your turn"
+            putStrLn (format "Player {0}'s turn" [[intToDigit (getPlayerNumber turnNumber)]])
             putStrLn "Enter row: "
             row <- getLine
             let y = (read row :: Int)
@@ -75,11 +78,11 @@ mainLoop gameState gameOver turnNumber = do
             let isGameOver = checkGameOver newGameState
             if isGameOver == 0
                 then
-                    mainLoop newGameState False  (turnNumber+1)
+                    mainLoop newGameState False (turnNumber+1)
                 else
                     do
                         putStrLn (format "player {0} won" [[intToDigit isGameOver]])
-                        printGameState gameState
+                        printGameState newGameState
                     
         else
             putStrLn "Fin de la partie"
