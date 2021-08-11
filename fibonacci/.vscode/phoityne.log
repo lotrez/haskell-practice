@@ -1,0 +1,30 @@
+2021-08-03 13:09:21.264179400000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-03 13:22:55.223533200000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-03 13:22:55.259532700000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-03 13:22:57.635039800000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-08-03 13:29:25.857457500000 [$pid(ThreadId 5)] ERROR APP - user error (variable id:10 not found.)
+2021-08-03 13:36:12.533288100000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-03 13:36:12.564363400000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-03 13:37:04.172831200000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-03 13:37:04.218623200000 [$pid(ThreadId 5)] ERROR APP - user error (no stacktrace found.)
+2021-08-10 15:29:27.990188300000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Main","C:/Users/Lucien/coding/haskell-practice/fibonacci/test/Spec.hs")])
+2021-08-10 15:29:31.920681800000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Main","C:/Users/Lucien/coding/haskell-practice/fibonacci/test/Spec.hs")])
+2021-08-10 15:31:02.599663400000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [])
+2021-08-10 15:31:02.617587200000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:31:26.517454500000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [])
+2021-08-10 15:31:26.534454800000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:31:30.865618900000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [])
+2021-08-10 15:31:30.882617900000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:31:39.671254800000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [])
+2021-08-10 15:31:39.689255200000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:32:34.606689700000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs")])
+2021-08-10 15:32:34.624686300000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:34:23.348464400000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs")])
+2021-08-10 15:34:23.364465300000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:34:30.195193200000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs")])
+2021-08-10 15:34:30.226683900000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:35:15.079637900000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs")])
+2021-08-10 15:35:15.095637900000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:35:37.056658200000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs")])
+2021-08-10 15:35:37.068660400000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-08-10 15:35:48.544361800000 [$pid(ThreadId 5)] ERROR APP - user error (<getModule> loaded module can not find from path. <c:\Users\Lucien\coding\haskell-practice\fibonacci\app\Main.hs> [("Lib","C:\\Users\\Lucien\\coding\\haskell-practice\\fibonacci\\src\\Lib.hs"),("Main","C:/Users/Lucien/coding/haskell-practice/fibonacci/test/Spec.hs")])

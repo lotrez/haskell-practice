@@ -8,6 +8,6 @@ main =
     do
         putStrLn "Enter your number"
         line <- getLine 
-        let n = read line :: Int
+        let n = read line :: Integer
         
         print(startCycle n [])
